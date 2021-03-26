@@ -59,23 +59,23 @@ public class Week2GladLib {
             case "country":
             return randomFrom(countryList);
             case "number":
-            return randomFrom(countryList);
+            return ""+myRandom.nextInt(50)+5;
             case "fruit":
-            return randomFrom(countryList);
+            return randomFrom(fruitList);
             case "verb":
-            return randomFrom(countryList);
+            return randomFrom(verbList);
             case "timeframe":
-            return randomFrom(countryList);
+            return randomFrom(timeList);
             case "animal":
-            return randomFrom(countryList);
+            return randomFrom(animalList);
             case "adjective":
-            return randomFrom(countryList);
+            return randomFrom(adjectiveList);
             case "name":
-            return randomFrom(countryList);
+            return randomFrom(nameList);
             case "noun":
-            return randomFrom(countryList);
+            return randomFrom(nounList);
             case "color":
-            return randomFrom(countryList);
+            return randomFrom(colorList);
         }
         
         return "**UNKNOWN**";
