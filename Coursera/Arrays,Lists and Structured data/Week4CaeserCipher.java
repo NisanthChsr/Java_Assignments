@@ -1,4 +1,4 @@
-/*package Assignments2;
+package Assignments2;
 
 import edu.duke.*;
 import java.util.*;
@@ -153,7 +153,7 @@ class Week4VigenereBreaker {
 
         return wordList;
     }
-/*
+
     public int countWords(String message, HashSet<String> dictionary) {
         String[] wordList = message.split("\\W+");
         int totalOccurences = 0;
@@ -175,7 +175,7 @@ class Week4VigenereBreaker {
             /*
              * Code for break vigenere with unknown key using english language:
              * int[] key = tryKeyLength(encrypted, i, 'e');
-             */ /*
+             */ 
             int[] key = tryKeyLength(encrypted, i, mostCommonCharIn(dictionary));
             Week4VigenereCipher vc = new Week4VigenereCipher(key);
             String decrypted = vc.decrypt(encrypted);
@@ -309,4 +309,3 @@ class Week4VigenereCipher {
     }
 
 }
-*/
