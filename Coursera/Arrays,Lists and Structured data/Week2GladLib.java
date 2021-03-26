@@ -54,36 +54,30 @@ public class Week2GladLib {
     }
 
     private String getSubstitute(String label) {
-        if (label.equals("country")) {
+        switch(label):
+        {
+            case "country":
+            return randomFrom(countryList);
+            case "number":
+            return randomFrom(countryList);
+            case "fruit":
+            return randomFrom(countryList);
+            case "verb":
+            return randomFrom(countryList);
+            case "timeframe":
+            return randomFrom(countryList);
+            case "animal":
+            return randomFrom(countryList);
+            case "adjective":
+            return randomFrom(countryList);
+            case "name":
+            return randomFrom(countryList);
+            case "noun":
+            return randomFrom(countryList);
+            case "color":
             return randomFrom(countryList);
         }
-        if (label.equals("color")){
-            return randomFrom(colorList);
-        }
-        if (label.equals("noun")){
-            return randomFrom(nounList);
-        }
-        if (label.equals("name")){
-            return randomFrom(nameList);
-        }
-        if (label.equals("adjective")){
-            return randomFrom(adjectiveList);
-        }
-        if (label.equals("animal")){
-            return randomFrom(animalList);
-        }
-        if (label.equals("timeframe")){
-            return randomFrom(timeList);
-        }
-        if (label.equals("verb")){
-            return randomFrom(verbList);
-        }
-        if (label.equals("fruit")){
-            return randomFrom(fruitList);
-        }
-        if (label.equals("number")){
-            return ""+myRandom.nextInt(50)+5;
-        }
+        
         return "**UNKNOWN**";
     }
 
